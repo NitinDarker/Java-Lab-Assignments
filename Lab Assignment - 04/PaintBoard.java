@@ -1,5 +1,10 @@
 public class PaintBoard {
     private double width, height;
+
+    public PaintBoard(double w, double h) {
+        width = w;
+        height = h;
+    }
     /*
     public PaintBoard() {
         width = height = 0;
