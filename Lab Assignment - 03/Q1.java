@@ -20,12 +20,12 @@ class Loan {
 
 class HomeLoan extends Loan {
     private double repoRate;
-    private String homeType;
+    // private String homeType;
 
     public void setHomeLoanDetails(double principal, double rate, double repoRate, String homeType) {
         setLoanValues(principal, rate);
         this.repoRate = repoRate;
-        this.homeType = homeType;
+        // this.homeType = homeType;
     }
 
     public void changeRepoRate(double repoRate) {
