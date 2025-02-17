@@ -1,54 +1,39 @@
-public class PaintBoard {
-    protected final double width, height;
+class PaintBoard {
+    private final int width;
+    private final int height;
+    private final LinkedList<Shape> shapes = new LinkedList<>();
 
-    public PaintBoard(double w, double h) {
-        width = w;
-        height = h;
-    }
-    /*
-    public PaintBoard() {
-        width = height = 0;
-        color = "White";
-        outline = "Black";
-    }
-
-    public PaintBoard(double width, double height) {
+    public PaintBoard(int width, int height) {
         this.width = width;
         this.height = height;
-        color = "White";
-        outline = "Black";
     }
 
-    @Override
-    public double getArea() {
-        return width * height;
+    public void addShape(Shape shape) {
+        shapes.add(shape);
     }
 
-    @Override
-    public double getPerimeter() {
-        return (2 * width) + (2 * height);
+    public void displayAllInfo() {
+        System.out.println("\nPaint Board (" + width + "x" + height + ")");
+        System.out.println("Shapes:");
+        for (int i = 0; i < shapes.size(); i++) {
+            Shape shape = shapes.get(i);
+            System.out.println("-------------------");
+            System.out.println(shape.getProperties());
+            System.out.printf("Area: %.2f\n", shape.getArea());
+            System.out.printf("Perimeter: %.2f\n", shape.getPerimeter());
+            System.out.println("Fill Color: " + shape.getColor());
+        }
     }
 
-    @Override
-    public void getProperties() {
-        System.out.println("Width: " + width);
-        System.out.println("Height: " + height);
+    public void setFillColorForAll(String color) {
+        for (int i = 0; i < shapes.size(); i++) {
+            shapes.get(i).fillColor(color);
+        }
     }
 
-    @Override
-    public void fillColor(String color) {
-        this.color = color;
+    public void setOutlineColorForAll(String color) {
+        for (int i = 0; i < shapes.size(); i++) {
+            shapes.get(i).fillOutline(color);
+        }
     }
-
-    @Override
-    public void fillOutline(String color) {
-        this.outline = color;
-    }
-
-    @Override
-    public void getColor() {
-        System.out.println("Color: " + color);
-        System.out.println("Outline: " + outline);
-    }
-*/
 }

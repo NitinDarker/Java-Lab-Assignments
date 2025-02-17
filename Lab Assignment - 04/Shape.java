@@ -1,42 +1,24 @@
-public abstract class Shape implements Color {
-    // protected double width;
-    // protected double height;
-    protected String color;
-    protected String outline;
+// Abstract Shape class implementing common color functionality
+abstract class Shape implements Color {
+    protected String fillColor = "none";
+    protected String outlineColor = "none";
+    
+    abstract double getArea();
+    abstract double getPerimeter();
+    abstract String getProperties();
 
-    public Shape() {
-        color = "White";
-        outline = "Black";
+    @Override
+    public void fillColor(String colorName) {
+        this.fillColor = colorName;
     }
 
-    public abstract double getArea();
-    public abstract double getPerimeter();
-    public abstract void getProperties();
-}
+    @Override
+    public void fillOutline(String colorName) {
+        this.outlineColor = colorName;
+    }
 
-/*
- * class Rectangle extends Shape {
- * double length, breadth;
- * 
- * public Rectangle(double l, double b) {
- * length = l;
- * breadth = b;
- * }
- * 
- * @Override
- * double getArea() {
- * return length * breadth;
- * }
- * 
- * @Override
- * double getPerimeter() {
- * return (2 * length) + (2 * breadth);
- * }
- * 
- * @Override
- * void getProperties() {
- * System.out.println("Length: " + length);
- * System.out.println("Breadth: " + breadth);
- * }
- * }
- */
+    @Override
+    public String getColor() {
+        return fillColor;
+    }
+}
