@@ -20,8 +20,8 @@ class Menu {
                 case 1 -> createPaintBoard();
                 case 2 -> createShape();
                 case 3 -> addShapeToPaintBoard();
-                case 4 -> displayPaintBoardInfo();
-                case 5 -> setColorsForPaintBoard();
+                case 4 -> setColorsForPaintBoard();
+                case 5 -> displayPaintBoardInfo();
                 case 6 -> {
                     System.out.println("Exiting...");
                     return;
@@ -36,8 +36,8 @@ class Menu {
         System.out.println("1. Create Paint Board");
         System.out.println("2. Create Shape");
         System.out.println("3. Add Shape to Paint Board");
-        System.out.println("4. Display Paint Board Info");
-        System.out.println("5. Set Colors for Paint Board");
+        System.out.println("4. Set Colors for Paint Board");
+        System.out.println("5. Display Paint Board Info");
         System.out.println("6. Exit");
     }
 
