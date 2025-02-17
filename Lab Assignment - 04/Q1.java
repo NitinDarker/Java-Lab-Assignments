@@ -1,12 +1,17 @@
 import java.util.Scanner;
 
-
 public class Q1 {
+    public static void main(String args[]) {
+        Menu.run();
+    }
+}
+
+class Menu {
     private static final LinkedList<PaintBoard> paintBoards = new LinkedList<>();
     private static final LinkedList<Shape> shapes = new LinkedList<>();
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void run() {
         while (true) {
             printMenu();
             int choice = getIntInput("Enter your choice: ");
