@@ -1,3 +1,10 @@
+// Interface for all Colors
+interface Color {
+    void fillColor(String colorName);
+    void fillOutline(String colorName);
+    String getColor();
+}
+
 // Abstract Shape class implementing common color functionality
 abstract class Shape implements Color {
     protected String fillColor = "none";
