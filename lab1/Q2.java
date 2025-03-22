@@ -1,3 +1,4 @@
+package lab1;
 class LineObj {
     // Object for a line
     Points p1, p2;

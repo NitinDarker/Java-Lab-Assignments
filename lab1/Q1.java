@@ -1,3 +1,4 @@
+package lab1;
 class Points {
     // Class to store two co-ordinates in a plane
     int x, y;
@@ -17,8 +18,8 @@ class Points {
         int x1 = this.x;
         int x2 = p2.x;
 
-        int diff1 = x1 - 0;
-        int diff2 = x2 - 0;
+        int diff1 = x1;
+        int diff2 = x2;
 
         // If points lie on negative x-axis
         if (diff1 < 0) diff1 = -1 * diff1;
@@ -31,7 +32,7 @@ class Points {
 }
 
 public class Q1 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Points p1 = new Points();
         p1.setValue(15, 10);
         p1.getValue();
