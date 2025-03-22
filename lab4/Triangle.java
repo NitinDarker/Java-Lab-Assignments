@@ -1,3 +1,5 @@
+package lab4;
+
 class Triangle extends Shape {
     private final double side1;
     private final double side2;

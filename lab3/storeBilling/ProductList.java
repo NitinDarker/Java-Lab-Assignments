@@ -1,3 +1,5 @@
+package lab3.storeBilling;
+
 public class ProductList {
     private Product head;
 

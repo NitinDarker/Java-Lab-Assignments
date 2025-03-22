@@ -1,3 +1,5 @@
+package lab3.storeBilling;
+
 public class Product {
     private final String name;
     private int quantity;

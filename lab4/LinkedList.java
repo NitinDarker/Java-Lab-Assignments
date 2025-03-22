@@ -1,5 +1,7 @@
 // Linked List that can store any object type<T>
 // It is beneficial since we are creating multiple lists for different objects
+package lab4;
+
 class LinkedList<T> {
     private Node<T> head;
     private int size;

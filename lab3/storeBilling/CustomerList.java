@@ -1,3 +1,5 @@
+package lab3.storeBilling;
+
 class CustomerList {
     class CustomerNode {
         Customer data;

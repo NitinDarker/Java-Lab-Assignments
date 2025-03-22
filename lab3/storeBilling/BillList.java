@@ -1,3 +1,5 @@
+package lab3.storeBilling;
+
 public class BillList {
     // Class to represent a node in a linked list
     private double data;

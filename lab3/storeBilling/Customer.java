@@ -1,3 +1,5 @@
+package lab3.storeBilling;
+
 public class Customer {
     private final String name;
     private double currentBill;

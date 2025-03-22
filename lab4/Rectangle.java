@@ -1,3 +1,5 @@
+package lab4;
+
 class Rectangle extends Shape {
     private final double width;
     private final double height;

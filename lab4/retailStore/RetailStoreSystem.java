@@ -1,3 +1,5 @@
+package lab4.retailStore;
+
 import java.util.Scanner;
 
 class LinkedList<T> {

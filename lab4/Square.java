@@ -1,3 +1,5 @@
+package lab4;
+
 class Square extends Shape {
     private final double side;
 

@@ -1,4 +1,6 @@
 // Interface for all Colors
+package lab4;
+
 interface Color {
     void fillColor(String colorName);
     void fillOutline(String colorName);

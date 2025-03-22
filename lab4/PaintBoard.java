@@ -1,3 +1,5 @@
+package lab4;
+
 class PaintBoard {
     private final int width;
     private final int height;
