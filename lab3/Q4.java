@@ -1,4 +1,5 @@
 // Q4. Program to represent a 2-D Matrix Data-Structure
+package lab3;
 import java.util.Scanner;
 
 class TwoDArray {

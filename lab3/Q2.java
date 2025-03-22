@@ -1,4 +1,5 @@
 // Q2. Java class to implement a stack
+package lab3;
 class Stack {
     private final int[] stack; // Array to implement the stack
     private final int size; // Size of the stack array

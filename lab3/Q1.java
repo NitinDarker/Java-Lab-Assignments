@@ -1,3 +1,4 @@
+package lab3;
 class Loan {
     protected double principal;
     protected double rate;

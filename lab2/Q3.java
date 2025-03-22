@@ -1,3 +1,4 @@
+package lab2;
 class Complex {
     int real, img;
 

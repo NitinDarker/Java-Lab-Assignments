@@ -1,4 +1,6 @@
 // Q5. Program to implement a linked list of integers
+package lab3;
+
 class Node {
     // Class to represent a node in a linked list
     int data;

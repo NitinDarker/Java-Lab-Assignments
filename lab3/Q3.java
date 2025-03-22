@@ -1,4 +1,5 @@
 // Q3. Java program to represent a queue of complex numbers
+package lab3;
 class ComplexNum {
     // Class to represent a complex number
     private final double real;

@@ -1,4 +1,5 @@
 // Calculator to add two integers and two real numbers
+package lab2;
 class Q2 {
     static int add (int x, int y) {
         return x + y;
