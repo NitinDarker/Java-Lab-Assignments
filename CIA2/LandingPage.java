@@ -8,10 +8,19 @@ public class LandingPage {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter your email-Id: ");
         String email = sc.next();
+        String regex = "^[a-zA-Z0-9_+&*-]+(:?\\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
+        if (!email.matches(regex)) {
+            System.err.println("Please enter a valid email address!");
+            return;
+        }
         System.out.print("Enter your new username: ");
         String username = sc.next();
         System.out.print("Enter a new password: ");
         String password = sc.next();
+        if (User.findUser(username) != null) {
+            System.err.println("This username is already taken!");
+            return;
+        }
         User newUser;
         try {
             newUser = new User(email, username, password);
@@ -43,9 +52,15 @@ public class LandingPage {
     }
 
     public static void loggedIn(User user) {
-        System.out.println("\nYou are logged in...");
-        System.out.println("Username: " + user.getUsername());
-        OnlineVoting.votingPage(user);
+        try {
+            Thread.sleep(500);
+            System.out.println("\nYou are logged in...");
+            System.out.println("Welcome " + user.getUsername() + "!");
+            Thread.sleep(500);
+            VotingPage.mainPage(user);
+        } catch (InterruptedException e) {
+            System.out.println("Sorry! Something has occurred on our end!");
+        }
     }
 
     public static void main(String[] args) {
