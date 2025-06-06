@@ -1,4 +1,0 @@
-Format: candidateID,name,party
-001,Narendra Modi,BJP
-002,Rahul Gandhi,Congress
-003,Arvind Kejriwal,AAP

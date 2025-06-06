@@ -1,7 +1,0 @@
-.vscode/
-bin/
-.idea/
-*.class
-*.iml
-Test.java
-Main.java
